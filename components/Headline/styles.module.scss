@@ -1,0 +1,46 @@
+.headline {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: -0.031rem;
+    font-weight: 800;
+  }
+
+  p {
+    width: 50rem;
+    margin: 1rem 0 0 0;
+    font-size: 1.25rem;
+    color: var(--color-quaternary);
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .headline {
+    h2 {
+      line-height: 2.6rem;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .headline {
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+}

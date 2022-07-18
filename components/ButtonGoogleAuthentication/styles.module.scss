@@ -1,0 +1,48 @@
+.google {
+  width: 25rem;
+  height: 3rem;
+  margin: 2.688rem 0 0 0;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-quattuordecenary);
+  font-size: 1rem;
+  color: var(--color-senary);
+  border-radius: 2px;
+
+  span {
+    margin: 0 0 0 4.875rem;
+  }
+}
+
+.registerEmail {
+  position: relative;
+  width: 12rem;
+  margin: 1.5rem 0 0 0;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5.625rem;
+    height: 0.063rem;
+    top: 50%;
+    background: var(--color-quinary);
+    transform: translateY(2px);
+  }
+
+  &::before {
+    left: -6.25rem;
+  }
+
+  &::after {
+    right: -6.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .google {
+    width: 100%;
+  }
+}

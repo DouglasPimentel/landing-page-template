@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .brand {
+    width: 40%;
+  }
+
+  nav {
+    width: 70%;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      li {
+        &:first-child {
+          padding-right: 3rem;
+        }
+
+        .signup {
+          width: 6rem;
+          height: 2.5rem;
+          padding: 1.25rem 0.5rem;
+          background-color: var(--color-secondary);
+          line-height: 1.5rem;
+          font-weight: 500;
+          border-radius: 0.125rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: var(--color-quinary);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    nav {
+      ul {
+        li {
+          &:first-child {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

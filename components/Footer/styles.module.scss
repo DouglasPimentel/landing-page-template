@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .content {
+    margin: 4rem 0 0 0;
+    display: flex;
+
+    .aboutWrapper {
+      width: 22rem;
+
+      .textAbout {
+        margin: 0.875rem 0 0 0;
+        color: var(--color-quaternary);
+        line-height: 1.5rem;
+        letter-spacing: -0.016rem;
+      }
+    }
+
+    .menuFooterWrapper {
+      width: 47rem;
+      display: flex;
+      justify-content: flex-end;
+      gap: 5rem;
+
+      h4 {
+        margin: 0 0 0.25rem 0;
+        color: var(--color-tertiary);
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 500;
+      }
+
+      ul {
+        li {
+          color: var(--color-quaternary);
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+
+          &:not(:last-child) {
+            margin: 0 0 0.25rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+
+    .text {
+      width: 50%;
+      display: inline-flex;
+      span {
+        color: var(--color-quaternary);
+        font-size: 0.875rem;
+      }
+    }
+
+    .social {
+      width: 50%;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+
+        li {
+          a {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .container {
+    .content {
+      .aboutWrapper {
+        .textAbout {
+          padding: 0 1rem 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    .content {
+      flex-direction: column;
+
+      .menuFooterWrapper {
+        width: 100%;
+        margin: 1.5rem 0 0 0;
+        flex-direction: column;
+        grid-gap: 1rem;
+        gap: 1rem;
+      }
+    }
+
+    .copyright {
+      margin: 2rem 0 0 0;
+      flex-direction: column;
+
+      .text,
+      .social {
+        width: 100%;
+      }
+
+      .text {
+        justify-content: center;
+        span {
+          text-align: center;
+        }
+      }
+
+      .social {
+        margin: 1rem 0 0 0;
+
+        ul {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

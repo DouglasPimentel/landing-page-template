@@ -1,0 +1,16 @@
+.primary {
+  width: 10.438rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  line-height: 1.5rem;
+  font-weight: 500;
+  border-radius: 0.125rem;
+  transition: all 0.3s ease-in-out;
+
+  &:first-child:hover {
+    background-color: var(--color-quinary);
+  }
+}

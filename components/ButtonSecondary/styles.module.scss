@@ -1,0 +1,16 @@
+.secondary {
+  width: 10.438rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  background-color: var(--color-quinary);
+  font-weight: 500;
+  border-radius: 0.125rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-secondary);
+  }
+}
